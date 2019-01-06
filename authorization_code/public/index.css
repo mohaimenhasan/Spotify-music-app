@@ -1,4 +1,19 @@
-#login, #loggedin {
+#login{
+	display: block;
+	color: black;
+	background: #ffdde1;
+	padding: 5%;
+	border-radius: 5% / 15%;
+	line-height: 5;
+	margin-top: 23%;
+	margin-left: 25%;
+	width: 50%;
+	-webkit-box-shadow: 3px 3px 22px -4px rgba(0,0,0,0.5);
+-moz-box-shadow: 3px 3px 22px -4px rgba(0,0,0,0.5);
+box-shadow: 3px 3px 22px -4px rgba(0,0,0,0.5);
+} 
+
+#loggedin {
 	display: none;
 }
 .text-overflow {
@@ -24,5 +39,43 @@ body{
     position: absolute;
     height: 100%;
     margin: 0;
-    background-color: #F5F5F5;
+    background: #EF3B36;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #EF3B36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn{
+  padding: 5%;
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  font-size:1.6em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.btn:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.btn:before,.btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn:hover:before,.btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
